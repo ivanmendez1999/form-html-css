@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form id="survey-form">
+    <h1 id="title">Formulario Prueba</h1>
+    <p id="description">Por favor, completa el siguiente formulario para que   podamos ponernos en contacto contigo. Nos aseguraremos de     responder a la brevedad.
+    </p>
+    
+      
+      <fieldset id="registrer-text">
+      <label for="name" id="name-label">Nombre <input id="name" type="text" placeholder="Ingresa tu nombre" required></input></label>
+
+      <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Ingresa tu correo" required></input></label>
+
+      <label for="number" id="number-label">Edad (optional) <input id="number" type="number" min="18" max="100" placeholder="Ingresa tu edad" required></input></label>
+      </fieldset>
+
+
+      <fieldset>
+      <label for="dropdown"> Ha que te dedicas?
+        <select id="dropdown" placeholder="a que te dedicas">
+          <option selected disabled value="select-profesion">-- Selecciona una opción --</option>
+          <option>Estudiante</option>
+          <option>Colaborador</option>
+          <option>Freelancer</option>
+          <option>Propietario</option>
+          <option>desempleado</option>
+        </select>
+        </label>
+        </fieldset>
+
+      <!--Este es el espacio para los radios -->
+      <fieldset>
+        <legend>Recomendarias nuestros cursos?</legend>
+      <label for="selection-radio"><input id="definitivamente-radio" type="radio" name="selection-radio" value="Definitivamente" required>Definitivamente</label>
+
+      <label for="selection-radio"><input id="probablemente-radio" type="radio" name="selection-radio" value="Probablemente"></input>Problablemente</label>
+
+      <label for="selection-radio"><input id="Nolocreo-radio" type="radio" name="selection-radio" value="Nolocreo"></input>No lo creo</label>
+      </fieldset>
+
+
+      <!-- Este espacio ser[a para la seleccion multiple-->
+      <fieldset class="ckeck-box-selector">
+        <legend>Cual es tu curso favorito?</legend>
+
+      <label for="selection-radio"><input class="check-front-end" type="checkbox" value="Front-end"></input>Front-end</label>
+
+      <label for="selection-radio"><input class="check-back-end" type="checkbox" value="Back-end"></input>Back-end</label>
+
+      <label for="selection-radio"><input class="check-big-data" type="checkbox" value="Big-data"></input>Big-data</label>
+
+      <label for="selection-radio"><input class="check-multimedia" type="checkbox" value="Multimedia"></input>Multimedia</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Puedes comentar algo por este medio! </legend>
+        <textarea placeholder="Al terminar presiona enter..."></textarea>
+      </fieldset>
+      
+      <input id="submit" type="submit" value="submit">
+    </form>
+  </body>
+<html>
